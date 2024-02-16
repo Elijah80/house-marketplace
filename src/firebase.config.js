@@ -14,3 +14,5 @@ const firebaseConfig = {
 // Initialize Firebase
 initializeApp(firebaseConfig)
 export const db = getFirestore()
+
+// userRef value = prgXBUWhYMc0QOwjuJu9sHyoLqF3
