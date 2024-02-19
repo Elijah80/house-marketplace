@@ -19,7 +19,7 @@ function SignUp() {
 	const navigate = useNavigate()
 
 	const onChange = e => {
-		setFormData(prevState => ({
+		setFormData((prevState) => ({
 			...prevState,
 			[e.target.id]: e.target.value,
 		}))
@@ -38,7 +38,7 @@ function SignUp() {
       delete formDataCopy.password
       formDataCopy.timestamp = serverTimestamp()
 
-      await setDoc(doc(db, 'users', 'user.uid'), formDataCopy)
+      await setDoc(doc(db, 'users', user.uid), formDataCopy)
 
 			navigate('/')
 		} catch (error) {
